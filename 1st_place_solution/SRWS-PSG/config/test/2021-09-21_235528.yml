@@ -1,0 +1,24 @@
+drive_dir: /content/drive/MyDrive
+data_dir: /content/drive/MyDrive/SRWS-PSG
+save_dir: /content/drive/MyDrive/experiments/2021-09-21_235528
+model_dir: /content/drive/MyDrive/experiments/2021-09-21_235528/models
+cache_dir: /content/drive/MyDrive/cache/huggingface/transformers/
+model_name: sultan/BioM-ELECTRA-Base-Discriminator
+max_length: 512
+n_splits: 5
+checkpoint:
+  n_best: 3
+dropout_rate: 0.1
+test_batch_size: 64
+seed: 2021
+target_col: judgement
+feature_cols:
+- title
+- abstract
+mode: predict
+folds:
+- 0
+- 1
+- 2
+- 3
+- 4

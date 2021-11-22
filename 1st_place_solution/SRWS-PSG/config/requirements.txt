@@ -1,0 +1,5 @@
+adabelief-tf==0.2.1
+omegaconf==2.1.1
+sentencepiece==0.1.96
+tensorflow-addons==0.14.0
+transformers==4.11.3

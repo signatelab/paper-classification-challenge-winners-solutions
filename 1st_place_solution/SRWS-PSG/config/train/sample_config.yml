@@ -1,0 +1,36 @@
+drive_dir: /content/drive/MyDrive
+data_dir: /content/drive/MyDrive/SRWS-PSG
+save_dir: /content/drive/MyDrive/experiments/2021-10-01_000000
+model_dir: /content/drive/MyDrive/experiments/2021-10-01_000000/models
+cache_dir: /content/drive/MyDrive/cache/huggingface/transformers/
+model_name: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract
+from_pt: true
+max_length: 512
+n_splits: 5
+optimizer:
+  learning_rate: 0.0001
+  weight_decay: 1.0e-05
+  epsilon: 1.0e-14
+  print_change_log: false
+checkpoint:
+  monitor: fbeta_score
+  mode: max
+  default_score: 0.0
+  n_best: 3
+dropout_rate: 0.0
+epochs: 5
+steps_per_epoch: 30
+train_batch_size: 64
+valid_batch_size: 64
+seed: 2021
+target_col: judgement
+feature_cols:
+- title
+- abstract
+mode: train
+folds:
+- 0
+- 1
+- 2
+- 3
+- 4

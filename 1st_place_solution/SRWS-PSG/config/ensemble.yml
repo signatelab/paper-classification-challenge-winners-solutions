@@ -1,0 +1,16 @@
+drive_dir: /content/drive/MyDrive
+data_dir: /content/drive/MyDrive/SRWS-PSG
+save_dir: /content/drive/MyDrive/experiments
+mode: ensemble
+dates:
+- 2021-09-08_000518
+- 2021-09-11_043111
+- 2021-09-12_162335
+- 2021-09-21_120653
+- 2021-09-21_235528
+thresholds:
+- 0.09913
+- 0.12033
+- 0.0928
+- 0.09793
+- 0.0844
